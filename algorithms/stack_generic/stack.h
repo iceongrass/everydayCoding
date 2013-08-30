@@ -18,10 +18,12 @@ typedef struct stack_ {
     int allocLength;
     int elemSize;
     void * elements;
+//   void (*freefn)(void * , void *);
 
 } stack;
 
 void stackNew(stack * s, int elemSize);
+//void stackNew(stack * s, int elemSize, void (*freefn)(void *, void *));
 
 void stackDispose(stack *s);
 
