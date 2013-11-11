@@ -1,0 +1,29 @@
+<html>
+<title>Print Age</title>
+<div class="leftmenu">
+<?php include 'menu.php'; ?>
+</div>
+
+<h1>Welcome to my home page.</h1>
+<p>Some text.</p>
+<body>
+    <form action="welcome.php" method="post">
+        Name:<input type="Text" name="name" />
+        Age:<input type="Text" name="age" />
+        <input type="submit" />
+    </form>
+    <form action="welcome.php" method="get">
+        Name: <input type="text" name="name1" />
+        Age: <input type="text" name="age1" />
+        <input type="submit" />
+    </form>
+
+    <form action="upload_file.php" method="post"
+        enctype="multipart/form-data">
+        <label for="file">Filename:</label>
+        <input type="file" name="file" id="file" /> 
+        <br />
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+</body>
+</html>
